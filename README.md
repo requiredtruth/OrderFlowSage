@@ -3,7 +3,7 @@
 Strict, dependency-free limit-order-book snapshot replay with sequence integrity checks and transparent microstructure features. It calculates spread, microprice, top/depth imbalance, top-of-book order-flow imbalance (OFI), signed trade flow, checksums, and fixed event windows. It never predicts price or submits orders.
 
 ```console
-$ ./doit.sh
+$ ./install.sh
 ...
 OrderFlowSage deterministic replay report
 events=12 sequence=1000..1011 windows=3
