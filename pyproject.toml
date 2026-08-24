@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "orderflowsage"
+version = "0.1.0"
+description = "Deterministic limit-order-book replay and microstructure diagnostics"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = []
+[project.scripts]
+orderflowsage = "orderflowsage.cli:main"
+[tool.setuptools.package-data]
+"orderflowsage.data" = ["*.json", "*.jsonl"]

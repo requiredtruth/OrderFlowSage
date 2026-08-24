@@ -1,0 +1,26 @@
+name: Funded direction
+description: Suggest offline replay work with a confirmed, unclaimed public transaction hash
+title: "[Funded direction] "
+labels: ["funded-direction"]
+body:
+  - type: markdown
+    attributes:
+      value: Never post secrets. A public hash is not wallet-ownership proof and cannot be reused. Donations do not buy ownership, returns, deadlines, priority, support, or acceptance.
+  - type: input
+    id: asset_network
+    attributes:
+      label: Asset and exact network
+    validations:
+      required: true
+  - type: input
+    id: transaction
+    attributes:
+      label: Confirmed public transaction hash
+    validations:
+      required: true
+  - type: textarea
+    id: direction
+    attributes:
+      label: Requested direction and reproducible acceptance test
+    validations:
+      required: true
