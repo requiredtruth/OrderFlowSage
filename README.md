@@ -68,3 +68,8 @@ Bids must have unique descending prices; asks must have unique ascending prices.
 [Donations fund additional development time](SUPPORT.md). Confirmed donors may request a direction using a public transaction hash; donations cannot purchase ownership, returns, deadlines, priority, acceptance, or prohibited work.
 
 Apache-2.0 licensed. See [LICENSE](LICENSE).
+
+
+## Standard launcher
+
+`./run.sh` is the normal entry point. It runs `./install.sh` automatically when setup is missing, then opens the PySide6 control panel with live output and actions for the demo, tests, repair, and stop. Use `./cli.sh` for CLI-only operation.
